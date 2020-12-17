@@ -1,0 +1,368 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS perso */
+
+:root {
+	--white: #fff;
+	--pink: #ba2480;
+	--black: #000;
+	--darkblue: #17202A;
+	--bold: 700;
+	--lightgrey: lightgrey;
+	--grey: grey;
+}
+
+html, body {
+	font-family: Roboto, lucida grande, lucida sans unicode, Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	scrollbar-color: var(--darkblue) var(--pink);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--pink);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--darkblue);
+	height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+	height: 30px;
+}
+
+/* GENERALITES */
+
+/* HEADER */
+
+/* NAVBAR */
+
+.navbar .container img {
+	width: 120px;
+	margin-top: -3px;
+}
+
+.navbar {
+	background-color: #17202A;
+}
+
+.nav-item a:hover {
+	background-color: grey;
+	border-radius: 4px;
+	font-size: 1.7vw;
+	letter-spacing: 5px;
+	font-size: 19px;
+	transition: 1.5s;
+}
+
+.wrap {
+	background: lightgrey;
+	color: --black;
+	font-size: 25px;
+	text-align: center;
+	width: 100%;
+}
+
+.wrap .centre-h1 {
+	font-size: 50px;
+	padding: 0 50px;
+}
+
+.wrap .groupe {
+	font-size: 20px;
+	padding: 0 300px;
+}
+
+/* Valeurs */
+
+/* .valeurs {
+    background-color: #0094cd;
+} */
+
+/* FOOTER */
+
+.site-footer {
+	padding-top: 35px;
+	background-color: #17202A;
+	color: #F5E6C7;
+	font-size: 17px;
+}
+
+.footer-heading {
+	font-size: 20px;
+}
+
+.list-unstyled a:hover {
+	background-color: #ba2480;
+	border-radius: 4px;
+	color: white;
+	font-size: 1.7vw;
+	letter-spacing: 3px;
+	font-size: 15px;
+	transition: 1s;
+}
+
+.border-top {
+	padding-bottom: 20px;
+}
+
+.col-md-3 {
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.reseaux-sociaux {
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+
+.reseaux-sociaux img {
+	height: 22px;
+	width: 22px;
+	margin: 0 2px;
+}
+
+.col-md-2 a, .col-md-5 a {
+	color: #ba2480;
+}
+
+h5 {
+	font-size: 90px;
+	padding-bottom: 600px;
+}
+
+/* Qui nous sommes ? */
+
+.centre-h1 {
+	text-align: center;
+	border: 5px ridge --black;
+	text-decoration: underline;
+}
+
+.Yohann img {
+	margin-right: 5px;
+}
+
+.Aurore img {
+	margin-left: 15px;
+}
+
+.Steven img {
+	margin-left: 15px;
+}
+
+.Demba img {
+	width: 200px;
+}
+
+.valeurs {
+	text-align: center;
+	font-size: 1.7em;
+	padding-top: 5px;
+	background: linear-gradient(to right, #0094cd, #0094cd, #b1d9cc);
+}
+
+.valeurs h1 {
+	border: 5px ridge --black;
+	text-decoration: underline;
+}
+
+.big-valeurs {
+	display: flex;
+	justify-content: space-around;
+	background: linear-gradient(to right, #0094cd, #0094cd, #b1d9cc);
+}
+
+.big-valeurs h3 {
+	font-size: 1.5em;
+}
+
+.big-valeurs .boite1 {
+	background-color: #fff;
+	padding: 10%;
+	width: 100%;
+	border: 5px solid rgb(68, 68, 68);
+	margin: 10px;
+	font-stretch: initial;
+	height: 40px;
+	display: inline-block;
+}
+
+.petiteboite1 {
+	width: 100%;
+	margin-top: -95px;
+}
+
+.big-valeurs .boite2 {
+	background-color: #fff;
+	width: 100%;
+	border: 5px solid rgb(68, 68, 68);
+	margin: 10px;
+	padding: 10%;
+	height: 40px;
+}
+
+.petiteboite2 {
+	width: 100%;
+	margin-top: -110px;
+}
+
+.big-valeurs .boite3 {
+	background-color: #fff;
+	width: 100%;
+	border: 5px solid rgb(68, 68, 68);
+	margin: 10px;
+	padding: 10%;
+	height: 40px;
+}
+
+.petiteboite3 {
+	width: 100%;
+	margin-top: -85px;
+}
+
+.descrip-1 img {
+	width: 200px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.img2 img {
+	width: 200px;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+/* .descrip-1 {
+	display: block;
+} */
+
+.img3 img {
+	width: 200px;
+	margin-top: 10px;
+}
+
+.image-contenu {
+	display: flex
+}
+
+.droite-dev2 {
+	margin-left: 100px;
+}
+
+.sous-boite1 img {
+	width: 330px;
+	/* margin-left: 400px; */
+}
+
+/* présentation de l'équipe */
+
+.wrap3 {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(lightgrey, grey)
+}
+
+.wrap3 h1 {
+	border: 5px ridge --black;
+	text-decoration: underline;
+}
+
+.wrap3 .equipe {
+	text-align: center;
+	font-size: 2.25em;
+	line-height: 1.05em;
+	margin: .5em 0;
+	color: rgb(22, 33, 43);
+	margin: 60px 0;
+	text-transform: uppercase;
+}
+
+.dev {
+	display: flex;
+}
+
+.dev .us {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.us h2 {
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
+
+.us h3 {
+	font-size: 18px;
+	color: rgb(36, 35, 35);
+	display: flex;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+
+.wrap3 img {
+	margin-left: 80px;
+	width: 250px;
+	border-radius: 50%;
+	border: 2px solid #ba2480;
+}
+
+.wrap3 .demba {
+	height: 255px;
+	width: 255px;
+}
+
+.wrap3 p {
+	padding: 40px 80px 25px;
+	font-style: oblique;
+	font-weight: 700;
+	font-size: 20px;
+	color: rgb(70, 60, 60);
+	display: flex;
+	justify-content: center;
+}
